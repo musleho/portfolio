@@ -50,11 +50,9 @@ window.addEventListener('DOMContentLoaded', event => {
     const showSubmitted = function () {
         console.log('Success called');
         let msg = $('#submitSuccessMessage');
-        msg.addClass('text-success');
         msg.removeClass('d-none');
         setTimeout(() => {
             msg.addClass('d-none');
-            msg.removeClass('text-success');
         }, 3000);
     }
 
@@ -80,6 +78,10 @@ window.addEventListener('DOMContentLoaded', event => {
             if (value === 'OK') {
                 showSubmitted();
                 sendConfirmation(sendName, sendEmail);
+                $('#sendName').val("");
+                $('#sendEmail').val("");
+                $('#sendPhone').val("");
+                $('#messageBody').val("");
             }
             else {
                 showFailed();
