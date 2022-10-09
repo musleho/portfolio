@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Personal Portfolio for Omar Musleh",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  },
+  "scripts": {
+    "compile:sass": "sass sass:assets/css"
+  },
+  "author": "Omar Musleh",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.2.1"
+  }
+}
