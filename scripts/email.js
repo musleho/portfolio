@@ -80,6 +80,10 @@ window.addEventListener('DOMContentLoaded', event => {
             if (value === 'OK') {
                 showSubmitted();
                 sendConfirmation(sendName, sendEmail);
+                $('#sendName').val("");
+                $('#sendEmail').val("");
+                $('#sendPhone').val("");
+                $('#messageBody').val("");
             }
             else {
                 showFailed();

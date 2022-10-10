@@ -29,6 +29,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   };
 
+  //hide 
   window.addEventListener('scroll', () => {
     const topBtn = document.body.querySelector('.btn-persistent-bottom-right')
     if (window.scrollY >= 100) {
