@@ -33,6 +33,10 @@ $hr-border-width: 0px;
   }
 }
 
+body {
+  font-family: $font-family-sans-serif;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -73,4 +77,38 @@ $hr-border-width: 0px;
 }
 
 //IMPORT BOOTSTRAP 5
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+.bg-primary {
+  background-color: $primary !important;
+}
+
+a {
+  color: $primary;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+a:hover {
+  color:rgba($primary, 0.8);
+}
+
+.btn-primary {
+  background-color: $primary !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.btn-primary:hover {
+  background-color: rgba($primary, 0.8) !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.divider {
+  border: none !important;
+}
