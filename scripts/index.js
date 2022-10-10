@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
   };
 
-  //hide 
+  //hide the 'scroll to top' button when already at the top
   window.addEventListener('scroll', () => {
     const topBtn = document.body.querySelector('.btn-persistent-bottom-right')
     if (window.scrollY >= 100) {
