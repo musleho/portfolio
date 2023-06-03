@@ -8,7 +8,7 @@
  * built with this service in mind - even allowing you to use a secure
  * token rather than broadcasting your e-mail credentials.
  */
-window.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', () => {
     function buildMailString(sendName, sendEmail, sendPhone, messageBody) {
         return `You received the following message from ${sendName}:
         <br><br>${messageBody}<br><br>
@@ -48,7 +48,6 @@ window.addEventListener('DOMContentLoaded', event => {
     //Configure as appropriate for your element names and CSS framework.
     //This syntax requires jQuery as a dependency.
     const showSubmitted = function () {
-        console.log('Success called');
         let msg = $('#submitSuccessMessage');
         msg.addClass('text-success');
         msg.removeClass('d-none');
@@ -60,7 +59,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
     //Similar to the above, for when the message fails to send for whatever reason.
     const showFailed = function () {
-        console.log('Fail called');
         let msg = $('#submitErrorMessage')
         msg.removeClass('d-none');
         setTimeout(() => {
@@ -71,7 +69,6 @@ window.addEventListener('DOMContentLoaded', event => {
     //Contact Form Submit
     //Also uses jQuery syntax.
     $('#submitButton').on('click', () => {
-        console.log('Email called')
         let sendName = $('#sendName').val();
         let sendEmail = $('#sendEmail').val();
         let sendPhone = $('#sendPhone').val();

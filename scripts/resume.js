@@ -1,4 +1,4 @@
-window.addEventListener('DOMContentLoaded', event => {
+document.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
